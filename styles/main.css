@@ -1,46 +1,59 @@
 *{
-  border: 1px dotted grey;
   list-style: none;
 }
 
 body{
   margin: 0;
 }
+
 header{
   width: 100vw;
   text-align: top;
 }
 
-#js-triggers a, #js-triggers li{
+#js-triggers a{
   color: white;
   text-decoration: none;
+  padding: 5px;
+  font-size: larger;
+  text-align: left;
+}
+
+#js-triggers li{
   width: auto;
-  margin: 10px 20px 10px 10px;
-  padding: 12px;
+  margin: 5px 50px 5px 10px;
   text-align: right;
   top: 0;
 }
 
 #js-triggers{
   margin: 0;
+  padding-top: 20px;
+  top: 0;
   position: fixed;
-  border: 2px dashed black;
   width: 100%;
   background-color: rgb(56, 126, 255);
   text-align: center;
-  color:bisque;
 }
 
 nav{
   position: fixed;
   z-index: -1;
   top: 200px;
+  height: auto;
 }
 
 nav ul{
+  position: fixed;
   display: flex;
   background-color: rgb(56, 126, 255);
-  padding: 10px;
+  padding: 2px;
+
+  /*positioning values for when the view port changes*/
+  top: 64px;
+  right: 20%;
+  left: auto;
+  flex-direction: row;
 }
 
 nav ul li a{
@@ -49,10 +62,10 @@ nav ul li a{
 }
 
 nav ul li{
-  padding: 5px;
+  padding: 5px 20px 5px 20px;
+  margin: 1px;
   background-color: orange;
 }
-
 
 /*these elements are not needed and not implemented in the example video, so shove them out of the way.*/
 nav ul li ul{
@@ -62,8 +75,9 @@ nav ul li ul{
 }
 
 main{
-  margin-top: 400px;
-  border: 2px dashed black;
+  position: relative;
+  z-index: -2;
+  margin-top: 80px;
 }
 
 .modal-panel{
@@ -82,7 +96,6 @@ main{
   height: 90%;
   background-color: white;
 }
-
 
 .container{
     text-align: top;
