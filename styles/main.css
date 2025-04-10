@@ -70,7 +70,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  top:-100vh;
+  top: -100vh;
   left:0;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
