@@ -1,0 +1,89 @@
+*{
+  border: 1px dotted grey;
+  list-style: none;
+}
+
+body{
+  margin: 0;
+}
+header{
+  width: 100vw;
+  text-align: top;
+}
+
+#js-triggers a, #js-triggers li{
+  color: white;
+  text-decoration: none;
+  width: auto;
+  margin: 10px 20px 10px 10px;
+  padding: 12px;
+  text-align: right;
+  top: 0;
+}
+
+#js-triggers{
+  margin: 0;
+  position: fixed;
+  border: 2px dashed black;
+  width: 100%;
+  background-color: rgb(56, 126, 255);
+  text-align: center;
+  color:bisque;
+}
+
+nav{
+  position: fixed;
+  z-index: -1;
+  top: 200px;
+}
+
+nav ul{
+  display: flex;
+  background-color: rgb(56, 126, 255);
+  padding: 10px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li{
+  padding: 5px;
+  background-color: orange;
+}
+
+
+/*these elements are not needed and not implemented in the example video, so shove them out of the way.*/
+nav ul li ul{
+  top: -100vh;
+  position: fixed;
+  visibility: hidden;
+}
+
+main{
+  margin-top: 400px;
+  border: 2px dashed black;
+}
+
+.modal-panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:-100vh;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-content-pane{
+  width: 90%;
+  height: 90%;
+  background-color: white;
+}
+
+
+.container{
+    text-align: top;
+}
