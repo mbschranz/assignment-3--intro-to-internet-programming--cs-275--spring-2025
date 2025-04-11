@@ -39,8 +39,16 @@ header{
 nav{
   position: fixed;
   z-index: -1;
-  top: 200px;
   height: auto;
+
+  /*positioning values for when the view port changes*/
+  top: 25px;
+  right: 30%;
+  left: auto;
+
+  transition-duration: 0.25s;
+  transition-property: top, left;
+  transition-timing-function: ease;
 }
 
 nav ul{
@@ -48,11 +56,8 @@ nav ul{
   display: flex;
   background-color: rgb(56, 126, 255);
   padding: 2px;
+  text-wrap: nowrap;
 
-  /*positioning values for when the view port changes*/
-  top: 64px;
-  right: 20%;
-  left: auto;
   flex-direction: row;
 }
 
