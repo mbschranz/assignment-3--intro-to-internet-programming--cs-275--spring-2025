@@ -7,8 +7,6 @@ const menu = document.querySelector(`nav`);//the dropdown menu
 let menuIsOpen = false;//to keep track of when the menu is open or closed
 let menuMode = true;//to keep track of whether the menu dropdown is in menu mode or sidebar mode
 
-console.log(menu);
-console.log(menu.children);
 //MODAL FUNCTIONS
 //event listener for the open modal click
 modalButton.addEventListener(`click`, () => {
