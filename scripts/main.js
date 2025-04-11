@@ -1,8 +1,8 @@
 //constants
 const modal = document.querySelector(`.modal-panel`); //the modal
 const modalContent = document.querySelector(`.modal-content-pane`); //the modal panel
-const modalButton = document.getElementById(`js-triggers`).childNodes[3].childNodes[0];//the open modal button
-const menuButton = document.getElementById(`js-triggers`).childNodes[1].childNodes[0];//the open menu button
+const modalButton = document.getElementById(`js-triggers`).children[1].children[0];//the open modal button
+const menuButton = document.getElementById(`js-triggers`).children[0].children[0];//the open menu button
 const menu = document.querySelector(`nav`);//the dropdown menu
 let menuIsOpen = false;//to keep track of when the menu is open or closed
 let menuMode = true;//to keep track of whether the menu dropdown is in menu mode or sidebar mode
