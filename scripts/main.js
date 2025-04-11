@@ -1,5 +1,3 @@
-//js file for project
-
 //constants
 const modal = document.querySelector(`.modal-panel`); //the modal
 const modalContent = document.querySelector(`.modal-content-pane`); //the modal panel
