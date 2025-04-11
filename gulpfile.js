@@ -81,8 +81,7 @@ let serve = () => {
 //no need for the copyUnprocessedAssetsForProd task, as there are no outside assets.
 //all assets (java script, css, html) are processed already.
 
-exports.default = serve;    //the defualt IS serve, but there might as well be an explicit serve task.
-exports.serve = serve;
+exports.default = serve;
 exports.validateHTML = validateHTML;
 exports.compressHTML = compressHTML;
 exports.validateCSS = validateCSS;
@@ -90,6 +89,13 @@ exports.compressCSS = compressCSS;
 exports.validateJS = validateJS;
 exports.transpileJSForDev = transpileJSForDev;
 exports.transpileJSForProd = transpileJSForProd;
+exports.serve = series(
+    validateHTML,
+    compressCSS,
+    validateCSS,
+    transpileJSForDev,
+    serve
+);
 exports.build = series(
     compressHTML,
     compressCSS,
